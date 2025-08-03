@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subhra's Devfolio XP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <audio id="level-up-sound" src="D:\music\my_protfolio\retro-coin-1-236677.mp3"></audio>
+<audio id="xp-sound" src="D:\music\my_protfolio\retro-coin-1-236677.mp3"></audio>
+<audio id="click-sound" src="D:\music\my_protfolio\retro-coin-1-236677.mp3"></audio>
+<img src="D:\music\my_protfolio\16-bit-mario.gif" class="hero-sprite" alt="hero sprite">
+</head>
+<body>
+  <div id="welcome-popup" class="popup hidden">
+    <p>🎮 Welcome to <span class="highlight">Subhra's Devfolio XP</span>!<br>Ready to level up?</p>
+    <button class="popup-btn" onclick="closePopup()">OK</button>
+  </div>
+
+  <header>
+    <!-- Gamified HUD -->
+<div class="hud">
+  <p>🎮 Level: <span id="level">1</span></p>
+  <p>💥 XP: <span id="xp">0</span>/100</p>
+  <p>📜 Quests Completed: <span id="quests">3</span></p>
+</div>
+
+
+    <h1 class="title">🎮 Subhra – Devfolio XP</h1>
+    <nav>
+      <a href="#home" class="pixel-btn">Home</a>
+      <a href="#about" class="pixel-btn">About</a>
+      <a href="#projects" class="pixel-btn">Projects</a>
+      <a href="resume.html" class="pixel-btn">Resume</a>
+      <a href="#contact" class="pixel-btn">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="intro">
+      <p>👋 Hello! I’m <span class="highlight">Subhra</span>, a Level 20 Web & Game Dev Knight.</p>
+      <p>Your quest: Explore my world of projects and adventures!</p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>🧠 About Me</h2>
+      <p>I’m a creative developer with a passion for making cool, interactive stuff — especially with games and code!</p>
+    </section>
+
+    <section id="projects" class="section">
+  <h2>🗺️ Unlocked Quests</h2>
+  <ul>
+    <li>🎮 Built “Spider Knight” – a 2D platformer in Godot</li>
+    <li>🧩 Developed a logic puzzle game using JavaScript</li>
+    <li>🌌 Crafted this interactive, gamified Devfolio XP</li>
+  </ul>
+</section>
+<div id="questPopup" class="popup">🎉 New Quest Completed!</div>
+
+
+
+    <section id="resume" class="section">
+      <h2>📜 Resume</h2>
+      <p><a href="D:\music\my_protfolio\resume_subhranil.pdf" target="_blank" class="pixel-btn">Download My Resume</a></p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>📬 Contact Me</h2>
+      <p>Email: <a href="mailto:subhra@example.com">subhranilc50@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Subhra | Powered by Coffee & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <div id="level-up-popup" class="level-popup hidden">🎉 Level Up!</div>
+  <div class="mini-game-popup" id="miniGame">
+    <img src="D:\music\my_protfolio\16-bit-mario.gif" onclick="openGame()" class="sprite-character" />
+  <p>🎉 Welcome to the Mini-Game Zone!</p>
+  <p>(This is a placeholder — add your game here)</p>
+  <button onclick="closeGame()">Close</button>
+</div>
+
+</body>
+
+</html>
